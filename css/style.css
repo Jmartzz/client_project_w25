@@ -1,0 +1,235 @@
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Graphik", Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #00274C;
+    font-size: 1rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.skip {
+    position: absolute;
+    top: -100px; 
+    left: 0;
+    background-color: lightgray;
+    height: 35px;
+    padding: 10px;
+}
+
+.skip:focus {
+    top: 20px; 
+}
+
+nav {
+    background: #00274C;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #00274C;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    max-width: 120px;
+    margin: 5px;
+}
+
+nav a:hover, nav a:focus {
+    background: #041E42;
+    outline: 2px solid white;
+}
+
+nav a.active {
+    background: #FFCB05;
+    color: #000;
+    font-weight: bold;
+    border: 2px solid #041E42;
+}
+
+footer {
+    background: #00274C;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    text-align: center;
+    max-width: 300px;
+}
+
+.footer-nav a,
+footer a {
+    color: #FFCB05;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-nav a:hover,
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-bottom {
+    margin-top: 15px;
+    border-top: 2px solid white;
+    padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    background: #00274C;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+    background: #041E42;
+}
+
+/* I used ai for this portion to have the shadow on box fit the umich theme*/
+.content-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.content-container section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 2px solid #00274C;
+}
+
+.content-container h2 {
+    color: #00274C;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.content-container p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.content-container ul {
+    margin-left: 20px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.content-container li {
+    margin-bottom: 8px;
+}
+.first-gen-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto; 
+}
+
+.grocerybag {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.caps-image {
+    width: 100%;
+    max-width: 700px; 
+    height: auto;
+    display: block;
+    margin: 20px auto; 
+}
+
+h1 {
+    color: #00274C;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}

@@ -10,20 +10,20 @@
 <body>
     <!-- Used chatgbt to help gather and struct my site correctly-->
     <header>
-        <a href="#main-content">Skip to Main Content</a>
-        <img src="images/CAPS.png" alt="CAPS Logo">
+        <a class = "skip" href="#main-content">Skip to Main Content</a>
+        <img src="images/CAPS.png" alt="CAPS Logo from the University of Michigan"class="caps-image">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="food_pantry.html">Food Pantry</a></li>
-                <li><a href="caps.html">CAPS</a></li>
+                <li><a href="caps.html" class="active">CAPS</a></li>
                 <li><a href="first_gen.html">First gen</a></li>
             </ul>
         </nav>
         <h1>CAPS - Counseling and Psychological Services</h1>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" class="content-container">
         <section>
             <h2>Welcome to CAPS</h2>
             <p>At Counseling and Psychological Services (CAPS), we provide support for mental health and well-being to help you thrive as a student.</p>
@@ -58,7 +58,37 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 University of Michigan | <a href="https://caps.umich.edu/">CAPS</a></p>
+        <div class="footer-container">
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>The Student Success Portal provides resources and support for students at the University of Michigan to thrive academically and personally.</p>
+            </div>
+    
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:support@umich.edu">support@umich.edu</a></p>
+                <p>Phone: <a href="tel:+17341234567">(734) 123-4567</a></p>
+                <p>Location: Ann Arbor, MI</p>
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <nav class="footer-nav">
+                    <a href="index.html">Home</a> 
+                    <a href="food_pantry.html">Food Pantry</a> 
+                    <a href="caps.html"class="active">CAPS</a> 
+                    <a href="first_gen.html">First Gen</a>
+                </nav>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 University of Michigan | Student Success Portal</p>
+        </div>
     </footer>
+    
 </body>
 </html>

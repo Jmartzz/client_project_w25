@@ -9,11 +9,11 @@
 </head>
 <body>
     <header>
-        <a href="#main-content">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <a class = "skip" href="#main-content">Skip to Main Content</a>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo from the University of Michigan">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="food_pantry.html">Food Pantry</a></li>
                 <li><a href="caps.html">CAPS</a></li>
                 <li><a href="first_gen.html">First Gen</a></li>
@@ -22,7 +22,7 @@
         <h1>Student Success Portal</h1>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" class="content-container">
         <section>
             <h2>Welcome to the UM Grad Success Navigator</h2>
             <p>Your Comprehensive Guide to Resources for Graduate School Success.</p>
@@ -96,7 +96,38 @@
     </main>
 
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
+        <div class="footer-container">
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>The Student Success Portal provides resources and support for students at the University of Michigan to thrive academically and personally.</p>
+            </div>
+    
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:support@umich.edu">support@umich.edu</a></p>
+                <p>Phone: <a href="tel:+17341234567">(734) 123-4567</a></p>
+                <p>Location: Ann Arbor, MI</p>
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <nav class="footer-nav">
+                    <a href="index.html"class="active">Home</a> 
+                    <a href="food_pantry.html">Food Pantry</a> 
+                    <a href="caps.html">CAPS</a> 
+                    <a href="first_gen.html">First Gen</a>
+                </nav>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 University of Michigan | Student Success Portal</p>
+        </div>
     </footer>
+    
+    
 </body>
 </html>

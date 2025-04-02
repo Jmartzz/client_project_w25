@@ -301,4 +301,7 @@
   .pulse {
     animation: pulse 2s infinite ease-in-out;
   }
+  h1.pulse {
+    color: #245886; 
+  }
   

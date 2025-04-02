@@ -1,113 +1,108 @@
-<!DOCTYPE html>
+    <!-- Used ChatGPT to help gather and structure my site correctly -->
+    <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Food Pantry - University of Michigan</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Food Pantry - Maize and Blue Cupboard</title>
 </head>
 <body>
-    <!-- Used ChatGPT to help gather and structure my site correctly -->
-    <header>
-        <a class = "skip" href="#main-content">Skip to Main Content</a>
-        <img src="images/grocerybag.png"
-             alt="Food Logo"
-             style="max-width: 20%; height: auto;"
-             class="grocerybag">
-             <nav aria-label="Primary Navigation">
+  <header>
+    <a class="skip" href="#main-content">Skip to Main Content</a>
+    <img src="images/grocerybag.png"
+    alt="Food Logo"
+    style="max-width: 20%; height: auto;"
+    class="grocerybag">
+    <nav aria-label="Primary Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="food_pantry.html" class="active">Food Pantry</a></li>
+        <li><a href="caps.html">CAPS</a></li>
+        <li><a href="first_gen.html">First Gen</a></li>
+      </ul>
+    </nav>
+    <h1>Food Pantry - Maize and Blue Cupboard</h1>
+  </header>
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="food_pantry.html" class="active">Food Pantry</a></li>
-                <li><a href="caps.html">CAPS</a></li>
-                <li><a href="first_gen.html">First Gen</a></li>
-            </ul>
+  <main id="main-content" class="content-container" tabindex="-1">
+    <section class="info-card">
+      <h2>Welcome to the Maize and Blue Cupboard</h2>
+      <p>The Maize and Blue Cupboard (MBC) is dedicated to ensuring that every student has access to nutritious and culturally relevant food. We provide essential resources to address food insecurity on campus.</p>
+    </section>
+
+    <section class="info-card">
+      <h2>How It Works</h2>
+      <ul>
+        <li>Visit the pantry at the Trotter Multicultural Center.</li>
+        <li>Bring your MCard to access the resources.</li>
+        <li>Choose from a variety of fresh produce, pantry staples, and personal care items.</li>
+      </ul>
+    </section>
+
+    <section class="info-card">
+      <h2>Hours and Location</h2>
+      <p>The pantry is open at the following times:</p>
+      <ul>
+        <li>Monday - Friday: 1:00 PM - 7:00 PM</li>
+        <li>Saturday: 10:00 AM - 2:00 PM</li>
+        <li>Location: Trotter Multicultural Center, 428 S. State Street, Ann Arbor, MI</li>
+      </ul>
+    </section>
+
+    <section class="info-card">
+      <h2>How You Can Help</h2>
+      <ul>
+        <li>Donating non-perishable food items or personal care products.</li>
+        <li>Volunteering to help stock shelves and assist visitors.</li>
+        <li>Spreading the word about our resources to fellow students.</li>
+        <li>Contributing financially to ensure the longevity of the program.</li>
+      </ul>
+    </section>
+
+    <section class="info-card">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or need assistance, feel free to reach out:</p>
+      <ul>
+        <li>Email: <a href="mailto:mbc@umich.edu">mbc@umich.edu</a></li>
+        <li>Phone: (734) 764-INFO</li>
+        <li>Website: <a href="https://mbc.umich.edu">https://mbc.umich.edu</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Maize and Blue Cupboard supports student wellness through food accessibility and education.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:mbc@umich.edu">mbc@umich.edu</a></p>
+        <p>Phone: <a href="tel:+17347641111">(734) 764-1111</a></p>
+        <p>Location: Trotter Multicultural Center</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="food_pantry.html" class="active">Food Pantry</a>
+          <a href="caps.html">CAPS</a>
+          <a href="first_gen.html">First Gen</a>
         </nav>
-        <h1>Food Pantry - Maize and Blue Cupboard</h1>
-    </header>
-
-    <main id="main-content" class="content-container">
-
-        <section>
-            <h2>Welcome to the Maize and Blue Cupboard</h2>
-            <p>The Maize and Blue Cupboard (MBC) is dedicated to ensuring that every student has access to nutritious and culturally relevant food. We provide essential resources to address food insecurity on campus.</p>
-        </section>
-
-        <section>
-            <h2>How It Works</h2>
-            <p>The Maize and Blue Cupboard operates as a food pantry for students. Here's how to access it:</p>
-            <ul>
-                <li>Visit the pantry at the Trotter Multicultural Center.</li>
-                <li>Bring your MCard to access the resources.</li>
-                <li>Choose from a variety of fresh produce, pantry staples, and personal care items.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Hours and Location</h2>
-            <p>The pantry is open at the following times:</p>
-            <ul>
-                <li><strong>Monday - Friday:</strong> 1:00 PM - 7:00 PM</li>
-                <li><strong>Saturday:</strong> 10:00 AM - 2:00 PM</li>
-                <li><strong>Location:</strong> Trotter Multicultural Center, 428 S. State Street, Ann Arbor, MI</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>How You Can Help</h2>
-            <p>Support the Maize and Blue Cupboard by:</p>
-            <ul>
-                <li>Donating non-perishable food items or personal care products.</li>
-                <li>Volunteering to help stock shelves and assist visitors.</li>
-                <li>Spreading the word about our resources to fellow students.</li>
-                <li>Contributing financially to ensure the longevity of the program.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Contact Us</h2>
-            <p>If you have any questions or need assistance, feel free to reach out:</p>
-            <ul>
-                <li>Email: <a href="mailto:mbc-info@umich.edu">mbc-info@umich.edu</a></li>
-                <li>Phone: (734) 764-3000</li>
-                <li>Website: <a href="https://mbc.studentlife.umich.edu/">https://mbc.studentlife.umich.edu/</a></li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-container">
-            <!-- About Section -->
-            <div class="footer-section">
-                <h3>About Us</h3>
-                <p>The Student Success Portal provides resources and support for students at the University of Michigan to thrive academically and personally.</p>
-            </div>
-    
-            <!-- Contact Section -->
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>Email: <a href="mailto:support@umich.edu">support@umich.edu</a></p>
-                <p>Phone: <a href="tel:+17341234567">(734) 123-4567</a></p>
-                <p>Location: Ann Arbor, MI</p>
-            </div>
-    
-            <!-- Quick Links -->
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <nav class="footer-nav">
-                    <a href="index.html">Home</a> 
-                    <a href="food_pantry.html" class="active">Food Pantry</a> 
-                    <a href="caps.html">CAPS</a> 
-                    <a href="first_gen.html">First Gen</a>
-                </nav>
-            </div>
-        </div>
-    
-        <div class="footer-bottom">
-            <p>&copy; 2025 University of Michigan | Student Success Portal</p>
-        </div>
-    </footer>
-    
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> University of Michigan | Maize and Blue Cupboard</p>
+    </div>
+  </footer>
+<!--Got the following code from MDN webdocs -->
+  <script>
+    const currentDate = new Date();
+    const year = currentDate.getFullYear();
+    document.getElementById("year").textContent = year;
+  </script>
 </body>
 </html>

@@ -154,7 +154,6 @@
     background: #041E42;
   }
   
-
   .content-container {
     max-width: 800px;
     margin: 20px auto;
@@ -225,8 +224,7 @@
     padding: 10px;
   }
   
- /* Have Chatgbt help set up the info card for hover and sections
- */
+  /* Shared desktop/tablet view */
   @media (min-width: 768px) {
     .footer-container {
       flex-direction: row;
@@ -242,7 +240,7 @@
   
     .section-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
       margin-bottom: 2rem;
     }
@@ -263,45 +261,24 @@
     }
   
     .info-card:hover {
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-      transform: translateY(-3px);
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .section-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .info-card:hover {
       transform: scale(1.03);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
       z-index: 1;
     }
   }
   
-/* Chatgbt to add the pulse annimation on the 404
-  Make it alittle more pleasing
-*/
+  /* Pulse animation for 404 or other elements */
   @keyframes pulse {
-    0% {
-      transform: scale(1);
-      opacity: 1;
-    }
-    50% {
-      transform: scale(1.05);
-      opacity: 0.75;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.75; }
+    100% { transform: scale(1); opacity: 1; }
   }
   
   .pulse {
     animation: pulse 2s infinite ease-in-out;
   }
+  
   h1.pulse {
-    color: #245886; 
+    color: #245886;
   }
   

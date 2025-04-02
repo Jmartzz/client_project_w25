@@ -1,41 +1,55 @@
-<!-- 404 PAGE -->
+<!-- Had chatgbt help generate the layout and also the animation  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/html5reset.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>404 - Page Not Found</title>
   <style>
-    .error-container {
+    .error-section {
       text-align: center;
-      padding: 80px 20px;
+      padding: 4rem 2rem;
     }
-    .error-container h1 {
+    h1.pulse {
       font-size: 6rem;
-      color: #FFCB05;
-      margin-bottom: 1rem;
+      font-weight: bold;
+      color: #245886; /* Updated for better contrast */
+      animation: pulse 2s infinite;
     }
-    .error-container p {
-      font-size: 1.25rem;
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .error-section p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
       color: #00274C;
     }
-    .error-container a {
+    .error-section a {
       display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
       background-color: #00274C;
       color: #fff;
+      border: none;
       border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
     }
-    .error-container a:hover {
-      background-color: #041E42;
+    .footer-heading {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: white;
+      margin-bottom: 0.5rem;
     }
   </style>
 </head>
 <body>
   <header>
+    <a class="skip" href="#main-content">Skip to Main Content</a>
     <nav aria-label="Primary Navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -46,28 +60,27 @@
     </nav>
   </header>
 
-  <main class="error-container">
+  <main id="main-content" class="error-section" tabindex="-1">
     <h1 class="pulse">404</h1>
-
-    <p>Oops! The page you're looking for doesn't exist.</p>
-    <p>Try checking the URL or go back to the homepage.</p>
+    <p>Oops! The page you're looking for doesn't exist.<br>
+    Try checking the URL or go back to the homepage.</p>
     <a href="index.html">Return Home</a>
   </main>
 
   <footer>
     <div class="footer-container">
       <div class="footer-section">
-        <h3>About Us</h3>
-        <p>We're here to guide you to success—even if you get a little lost on the way.</p>
+        <p class="footer-heading">About Us</p>
+        <p>The Student Success Portal provides resources and support for students at the University of Michigan to thrive academically and personally.</p>
       </div>
       <div class="footer-section">
-        <h3>Contact Us</h3>
+        <p class="footer-heading">Contact Us</p>
         <p>Email: <a href="mailto:support@umich.edu">support@umich.edu</a></p>
         <p>Phone: <a href="tel:+17341234567">(734) 123-4567</a></p>
         <p>Location: Ann Arbor, MI</p>
       </div>
       <div class="footer-section">
-        <h3>Quick Links</h3>
+        <p class="footer-heading">Quick Links</p>
         <nav class="footer-nav">
           <a href="index.html">Home</a>
           <a href="food_pantry.html">Food Pantry</a>
@@ -82,9 +95,7 @@
   </footer>
 
   <script>
-    const currentDate = new Date();
-    const year = currentDate.getFullYear();
-    document.getElementById("year").textContent = year;
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
